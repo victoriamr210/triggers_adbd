@@ -17,7 +17,7 @@ Trigger: trigger_crear_email_before_insert
 - Si el nuevo valor del email que se quiere insertar es NULL, entonces se le creará automáticamente una dirección de email y se insertará en la tabla.
 - Si el nuevo valor del email no es NULL se guardará en la tabla el valor del email.
 
-### Procedumiento `crear_email`
+### Procedimiento `crear_email`
 
 Este procedimiento creará un email a partir de un dominio dado. Para poder crear el email necesitaremos el nombre del cliente y además una variable de salida que será el email en si, esta variable de la salida la indicamos con la palabra `OUT`. Con todos estos datos ya podemos crear el email, para ello usamos la función `CONCAT` que viene por defecto en SQL y esta concatenación la guardamos en la variable email.
 
